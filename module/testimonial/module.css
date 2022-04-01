@@ -1,0 +1,128 @@
+.testimonials {
+    overflow: hidden;
+}
+
+.icon-overlay {
+    position: absolute;
+    opacity: 0.3;
+    right: 10%;
+    top: 0;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.carousel-controls {
+    width: 500px;
+}
+
+.carousel-controls .control {
+    z-index: 1;
+}
+
+.prev,
+.next {
+    font-size: 3em;
+    cursor: pointer;
+    transition: transform 250ms ease;
+}
+
+.prev:hover,
+.next:hover {
+    transform: scale(1.1);
+}
+
+.prev {
+    left: 2rem;
+}
+
+.next {
+    right: 2rem;
+}
+
+.testimonial-item {
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.11);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.slick-slide.slick-center {
+    transition: transform 1s ease;
+}
+
+.slick-slide:not(.slick-center) {
+    transform: scale(.9);
+}
+
+.testimonial-image {
+    padding-bottom: 1rem;
+}
+
+.testimonial-content {
+    padding-bottom: 1rem;
+    color: #afb3b9;
+}
+
+.testimonial-name {
+    color: #0d264c;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.testimonial-position-company {
+    color: #3697b8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.testimonial-divider {
+    border-color: #188eb2;
+    border-style: solid;
+    width: 87px;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .prev {
+        left: -5rem;
+    }
+    .next {
+        right: -5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .testimonials {
+        max-height: 700px;
+    }
+    .icon-overlay {
+        height: 300px;
+        top: calc(50% - 150px);
+    }
+    .carousel-controls .control {
+        width: 25px;
+        height: 25px;
+        top: inherit;
+    }
+    .prev {
+        left: 4rem;
+    }
+    .next {
+        right: 4rem;
+    }
+    .control i {
+        font-size: .7rem;
+    }
+    .testimonial-item {
+        padding: 2rem;
+        margin: 1rem 0;
+    }
+    .testimonials .message {
+        font-size: 1rem;
+    }
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+}
